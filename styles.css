@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 3rem 50rem 3rem;
+    grid-template-rows: 3rem 46rem 3rem;
     grid-template-columns: 10rem 1fr;
     grid-template-areas:
     'header header header'
@@ -11,5 +11,80 @@
 .header {
     grid-area: header;
     background-color: #f2e9de;
-    display: flex
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem
+}
+
+.header a{
+    color: #286983;
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+}
+
+.header .navigation span:hover {
+    background-color: #b4637a;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #f2e9de;
+    padding: 1rem;
+    color: #286983;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f2e9de;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction; column;
+    padding: 1.5rem;
+}
+
+.sidebar-button {
+    background-color: #f2e9de;
+    border: none;
+    color: #286983;
+    padding: 5px -30px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+
+.content {
+    grid-area: content;
+    background-color: #f2e9de;
+}
+
+.add-text {
+    background-color: #f2e9de;
+    border: none;
+    color: #286983;
+    padding: 15px 30px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 30px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #286983;
+    font-size: 15px
 }
